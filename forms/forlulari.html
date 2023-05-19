@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulari</title>
+</head>
+
+<body>
+
+    <form action="#" method="post">
+        <label for="nom">Nom:</label>
+        <input type="text" id="nom" name="nom" required><br>
+
+        <label for="cognoms">Cognoms:</label>
+        <input type="text" id="cognoms" name="cognoms" required><br>
+
+        <label for="dni">DNI:</label>
+        <input type="text" id="dni" name="dni" required><br>
+
+        <label for="telefon">Telèfon:</label>
+        <input type="tel" id="telefon" name="telefon" required><br>
+
+        <label for="mail">Mail:</label>
+        <input type="email" id="mail" name="mail" required><br>
+
+        <label for="data_naixement">Data de naixement:</label>
+        <input type="date" id="data_naixement" name="data_naixement" required><br>
+
+        <label for="cp">CP:</label>
+        <input type="text" id="cp" name="cp" pattern="[0-9]{5}" required><br>
+
+        <label for="direccio">Direcció:</label>
+        <input type="text" id="direccio" name="direccio" required><br>
+
+        <label for="sexe">Sexe:</label>
+        <select id="sexe" name="sexe">
+            <option value="home">Home</option>
+            <option value="dona">Dona</option>
+            <option value="no_indicat">No ho vull indicar</option>
+        </select><br>
+
+        <label for="malaltia_cor">Malaltia del cor:</label>
+        <input type="radio" id="malaltia_cor_si" name="malaltia_cor" value="si">
+        <label for="malaltia_cor_si">Sí</label>
+        <input type="radio" id="malaltia_cor_no" name="malaltia_cor" value="no">
+        <label for="malaltia_cor_no">No</label><br>
+
+        <label for="alergia">Alergia:</label>
+        <input type="radio" id="alergia_si" name="alergia" value="si">
+        <label for="alergia_si">Sí</label>
+        <input type="radio" id="alergia_no" name="alergia" value="no">
+        <label for="alergia_no">No</label><br>
+
+        <label for="quines_alergies">Quines alèrgies:</label>
+        <textarea id="quines_alergies" name="quines_alergies"></textarea><br>
+
+        <label for="marxa">A quina marxa t'apuntes:</label>
+        <select id="marxa" name="marxa">
+            <option value="ruta_curta">Ruta curta de 16 Km</option>
+            <option value="ruta_llarga">Ruta llarga de 25 Km</option>
+        </select><br>
+
+        <label for="puntuacio">Puntuació sobre les rutes escollides enguany (de 1 a 10):</label>
+        <input type="number" id="puntuacio" name="puntuacio" min="1" max="10" required>
+
+        <br>
+
+        <label>Preferència sobre les postres:</label>
+        <br>
+        <input type="checkbox" id="fruita" name="postres[]" value="fruita">
+        <label for="fruita">Fruita</label>
+
+        <br>
+
+        <input type="checkbox" id="flam" name="postres[]" value="flam">
+        <label for="flam">Flam</label>
+
+        <br>
+
+        <input type="checkbox" id="iogurt" name="postres[]" value="iogurt">
+        <label for="iogurt">Iogurt</label>
+
+        <br>
+
+        <input type="checkbox" id="pastis" name="postres[]" value="pastis">
+        <label for="pastis">Pastís de xocolata</label>
+
+        <br>
+
+        <label for="pagament">Pujar la foto on es vegi la transferència de pagament feta:</label>
+        <input type="file" id="pagament" name="pagament" accept="image/*" required>
+
+        <br>
+
+        <button type="submit">Enviar</button>
+
+    </form>
+
+
+
+
+</body>
+
+</html>
